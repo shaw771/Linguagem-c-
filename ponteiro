@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int *ponteiro;
+int ai;
+
+int main(){
+	
+	ai=10;
+	ponteiro = &ai;
+	
+	
+	printf("Endereco do ponteiro: %p \n", ponteiro);
+	printf("Endereco do &ponteiro: %p \n", &ponteiro);
+	printf("Valor: %d \n", *ponteiro);
+	printf("Endereco do ai: %p \n", &ai);
+	printf("Valor do ponteiro: %d \n\n\n", ai);
+	
+	ai=20;
+	
+	printf("Endereco do ponteiro: %p \n", ponteiro);
+	printf("Endereco do &ponteiro: %p \n", &ponteiro);
+	printf("Valor: %d \n", *ponteiro);
+	printf("Endereco do ai: %p \n", &ai);
+	printf("Valor do ponteiro: %d \n", ai);
+		
+	
+	system ("pause");
+	return(0);
+}
